@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     new NxWebpackPlugin({
       tsConfig: './tsconfig.app.json',
+      outputPath: "dist/apps/app",
       compiler: 'babel',
       main: './src/main.tsx',
       index: './src/index.html',
@@ -19,7 +20,7 @@ module.exports = {
       assets: ['./src/favicon.ico', './src/assets'],
       styles: ['./src/styles.css'],
       outputHashing: process.env['NODE_ENV'] === 'production' ? 'all' : 'none',
-      optimization: process.env['NODE_ENV'] === 'production',
+      optimization: false,
     }),
     new NxReactWebpackPlugin({
       // Uncomment this line if you don't want to use SVGR

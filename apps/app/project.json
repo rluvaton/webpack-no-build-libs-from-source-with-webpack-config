@@ -3,6 +3,16 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/app/src",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "build": {
+     "executor": "@nx/webpack:webpack",
+      "options": {
+        "buildLibsFromSource": false,
+        "outputPath": "dist/apps/app",
+        "tsConfig": "apps/app/tsconfig.app.json",
+        "webpackConfig": "apps/app/webpack.config.js"
+      }
+    }
+  },
   "tags": []
 }

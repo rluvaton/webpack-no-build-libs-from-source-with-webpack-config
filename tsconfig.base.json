@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@webpack-build-libs-from-source-only-works-when-target-name-is-build/lib1": [
+        "libs/lib1/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
