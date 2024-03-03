@@ -1,5 +1,5 @@
 {
-  "name": "@webpack-build-libs-from-source-only-works-when-target-name-is-build/lib1",
+  "name": "@webpack-no-build-libs-from-source-with-webpack-config/lib1",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
